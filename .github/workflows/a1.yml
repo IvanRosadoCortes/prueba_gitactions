@@ -1,11 +1,12 @@
 name: Mostrar hola
+
 on:
   push:
-    branch: [ main ]
+    branches: [ main ]  # <-- CORREGIDO (plural)
+
 jobs:
   build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest  # <-- CORREGIDO (latest)
     steps:
-    - name: Escribir hola por la pantalla
-      run: 
-        echo "Hola desde el runner de github action"
+      - name: Escribir hola por la pantalla
+        run: echo "Hola desde el runner de github action"
