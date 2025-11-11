@@ -12,5 +12,5 @@ jobs:
         echo "La fecha y hora"
         date
         echo "--- Versión de Java por defecto (ubuntu-latest) ---"
-        java --version
+        java -version
         echo "--------------------------------------------------"
