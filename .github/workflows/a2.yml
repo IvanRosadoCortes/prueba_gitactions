@@ -12,8 +12,8 @@ jobs:
     - name: Mostrar fecha y hora
       run: 
         echo "La fecha y hora de ejecución es: $(date)"
-    - name: Mostrar versión de Java (Por defecto del Runner)
+    - name: Mostrar versión de Java
       run:
         echo "--- Versión de Java por defecto (ubuntu-latest) ---"
-        java -version
+        java -v
         echo "--------------------------------------------------"
