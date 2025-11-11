@@ -1,0 +1,19 @@
+name: Mostrar Mensaje, Fecha y Java
+on:
+  push:
+    branch: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+    steps:
+    - name: Escribir mensaje por la pantalla
+      run: 
+        echo "Hola desde el runner de github action"
+    - name: Mostrar fecha y hora
+      run: 
+        echo "La fecha y hora de ejecución es: $(date)"
+    - name: Mostrar versión de Java (Por defecto del Runner)
+      run:
+        echo "--- Versión de Java por defecto (ubuntu-latest) ---"
+        java -version
+        echo "--------------------------------------------------"
